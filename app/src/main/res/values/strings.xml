@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kotlinbatch_july2022</string>
+    <string name="helloworld">Hello World!</string>
+    <string name="welcomelabel">Hello World!</string>
+    <string name="theta_solutions">Theta Solutions</string>
+    <string name="android_development_with_kotlin">Android Development With Kotlin</string>
+    <string name="theta_sign_up">Theta Sign Up</string>
+    <string name="dialog_message" translatable="false">Are you sure you want to end this process?</string>
+
+</resources>

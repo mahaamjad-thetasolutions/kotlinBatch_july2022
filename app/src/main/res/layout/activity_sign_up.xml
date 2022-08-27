@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:backgroundTint="#80DBDF70"
+    android:backgroundTintMode="src_over"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+  >
+
+
+    <ImageView
+        android:id="@+id/androidimg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:src="@drawable/android_bg" />
+
+    <TextView
+        android:id="@+id/screen_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/androidimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawableStart="@drawable/ic_baseline_login_24"
+        android:drawablePadding="5dp"
+        android:padding="10dp"
+        android:text="@string/theta_sign_up"
+        android:textColor="@color/purple_500"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+<LinearLayout
+    android:id="@+id/form_layut"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@id/screen_Label"
+
+    >
+    <TextView
+        android:id="@+id/first_name_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/screen_Label"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:text="Firstname:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_name_label"
+        android:layout_marginHorizontal="@dimen/editetxt_margin"
+        android:hint="Enter your FirstName"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/email_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/screen_Label"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:text="Email:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_name_label"
+        android:layout_marginHorizontal="@dimen/editetxt_margin"
+        android:inputType="textEmailAddress"
+        android:hint="Enter your Email"
+        />
+    <TextView
+        android:id="@+id/password_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/screen_Label"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:text="Password:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_name_label"
+        android:layout_marginHorizontal="@dimen/editetxt_margin"
+        android:inputType="textPassword"
+
+        android:drawableStart="@drawable/ic_baseline_login_24_white"
+        android:hint="Password(Capital letter, 0-9, $%^)"
+        />
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/signUpbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/form_layut"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_btn"
+        android:drawableStart="@drawable/ic_baseline_login_24_white"
+        android:text="Sign Up" />
+
+</RelativeLayout>
+
+</ScrollView>

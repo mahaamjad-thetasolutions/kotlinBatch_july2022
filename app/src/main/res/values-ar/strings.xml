@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kotlinbatch_july2022</string>
+    <string name="helloworld">مرحبا بالعالم</string>
+    <string name="welcomelabel">مرحبا بالعالم</string>
+    <string name="theta_solutions">Theta Solutions</string>
+    <string name="android_development_with_kotlin">Android Development With Kotlin</string>
+</resources>
