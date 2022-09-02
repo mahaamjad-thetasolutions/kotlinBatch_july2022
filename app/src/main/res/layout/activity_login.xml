@@ -4,7 +4,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".LoginActivity">
-
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Gender"
+    android:textStyle="bold"
+    android:fontFamily="@font/roboto_light"
+    android:textColor="@color/black"
+    android:textSize="60sp"/>
+    <RadioGroup
+        android:id="@+id/genderGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rbmale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Male"
+            />
+        <RadioButton
+            android:id="@+id/rbfemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:checked="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Female"
+            />
+        <RadioButton
+            android:id="@+id/rbother"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Other"
+            />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resident Country"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_light"
+        android:textColor="@color/black"
+        android:textSize="40sp"/>
+<RadioGroup
+    android:id="@+id/residentgroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/brown">
+    <RadioButton
+        android:id="@+id/rbPakistan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Pakistan"/>
+    <RadioButton
+        android:id="@+id/rbOtherCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Other part of World"/>
+</RadioGroup>
+    <EditText
+        android:id="@+id/city"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        android:hint="City"
+        />
+    <Button
+        android:id="@+id/SubmitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"/>
 </LinearLayout>

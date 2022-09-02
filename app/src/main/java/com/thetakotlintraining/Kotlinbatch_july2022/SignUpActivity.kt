@@ -14,6 +14,8 @@ class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
+        var fruit=intent.getStringExtra("Fruits")
+        screen_Label.text=fruit
         signUpbtn.setOnClickListener {
             var firstName=edtusername.text.toString()
             var password=edtpassword.text.toString()

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
 android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
 xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
         android:id="@+id/userNameDisplay"
@@ -12,7 +14,53 @@ xmlns:android="http://schemas.android.com/apk/res/android">
         android:layout_margin="20dp">
 
     </TextView>
+    <CheckBox
+        android:id="@+id/apple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apple">
 
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/macroni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Macroni">
+
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Orange">
+
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/grapes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grapes">
+
+    </CheckBox>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pizza">
+
+    </CheckBox>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pasta">
+
+    </CheckBox>
+    <Button
+        android:text="Submit food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SubmitBtn">
+
+    </Button>
 <!--    <TextView-->
 <!--        android:id="@+id/labelOne"-->
 <!--        android:layout_width="wrap_content"-->
@@ -97,4 +145,4 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 <!--        />-->
 
 
-</RelativeLayout>
+</LinearLayout>
