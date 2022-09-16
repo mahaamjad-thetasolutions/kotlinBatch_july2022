@@ -9,6 +9,7 @@ import androidx.core.view.isVisible
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
+    var score:Int=0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -41,6 +42,7 @@ class LoginActivity : AppCompatActivity() {
                     R.id.rbPakistan ->{
                         city.isVisible=true
                         country=1
+
                     }
                     R.id.rbOtherCountry ->{
                         city.isVisible=false
