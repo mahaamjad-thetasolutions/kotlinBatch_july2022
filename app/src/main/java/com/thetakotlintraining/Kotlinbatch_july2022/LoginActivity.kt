@@ -9,32 +9,44 @@ import androidx.core.view.isVisible
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
-    var score:Int=0
+    var formType:Int=0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-//        genderGroup.setOnCheckedChangeListener { group, checkedId ->
-//            run{
-//                when(checkedId){
-//                    R.id.rbmale -> {
-//                        rbfemale.isChecked=false
-//                        rbother.isChecked=false
-//                        gender="Male"
-//                    }
-//                    R.id.rbfemale -> {
-//                        rbmale.isChecked=false
-//                        rbother.isChecked=false
-//                        gender="Female"
-//                    }
-//                    R.id.rbother -> {
-//                        rbfemale.isChecked=false
-//                        rbmale.isChecked=false
-//                        gender="Other"
-//                    }
-//                }
-//
-//            }
-//        }
+        var gender=""
+        genderGroup.setOnCheckedChangeListener { group, checkedId ->
+                when(checkedId){
+                    R.id.rbmale->{
+                        formType=0
+                    }
+                    R.id.rbfemale->{
+                        formType=1
+                    }
+
+                }
+        }
+        genderGroup.setOnCheckedChangeListener { group, checkedId ->
+            run{
+                when(checkedId){
+                    R.id.rbmale -> {
+                        rbfemale.isChecked=false
+                        rbother.isChecked=false
+                        gender="Male"
+                    }
+                    R.id.rbfemale -> {
+                        rbmale.isChecked=false
+                        rbother.isChecked=false
+                        gender="Female"
+                    }
+                    R.id.rbother -> {
+                        rbfemale.isChecked=false
+                        rbmale.isChecked=false
+                        gender="Other"
+                    }
+                }
+
+            }
+        }
         var country=0
         residentgroup.setOnCheckedChangeListener { group, checkedId ->
             run{

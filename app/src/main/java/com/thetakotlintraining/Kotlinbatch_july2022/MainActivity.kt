@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -22,6 +23,16 @@ class MainActivity : AppCompatActivity() {
             i.putExtra("Fruits",foodValue())
             startActivity(i)
         }
+      //  macroni.setOnClickListener { Toast.makeText(this,"This is starter",Toast.LENGTH_LONG).show() }
+//        macroni.setOnCheckedChangeListener { buttonView, isChecked ->
+//            if (isChecked) {
+//                //Do Whatever you want in isChecked
+//            }
+//            else{
+//
+//            }
+//            Toast.makeText(this,"This is starter",Toast.LENGTH_LONG).show()
+//        }
     }
 
     private fun foodValue(): String {
