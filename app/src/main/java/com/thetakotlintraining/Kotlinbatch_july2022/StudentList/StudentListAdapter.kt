@@ -9,7 +9,7 @@ import com.thetakotlintraining.Kotlinbatch_july2022.Models.Student
 import com.thetakotlintraining.Kotlinbatch_july2022.R
 import kotlinx.android.synthetic.main.student_list_item_view.view.*
 
-class StudentListAdapter: RecyclerView.Adapter<StudentListAdapter.studentVH>() {
+class StudentListAdapter(var clickListener:StudentListClickListener): RecyclerView.Adapter<StudentListAdapter.studentVH>() {
     lateinit var finalStudentList:ArrayList<Student>
     class studentVH(view: View):RecyclerView.ViewHolder(view)
 
@@ -23,6 +23,12 @@ class StudentListAdapter: RecyclerView.Adapter<StudentListAdapter.studentVH>() {
         holder.itemView.Name.text=student.studentName
         holder.itemView.studentDepartment.text=student.Department
         holder.itemView.studentPhoneNumber.text=student.studentPhone
+        //holder.itemView.profileImage.setImageResource(student.ProfileImage)
+        holder.itemView.profileImage.text=student.studentName.first().toString()
+        holder.itemView.setOnClickListener{
+            clickListener.studentShowNameClick(student.studentName)
+        }
+        holder.itemView.profileImage.setOnClickListener { clickListener.studentClick(student) }
     }
 
     override fun getItemCount(): Int {

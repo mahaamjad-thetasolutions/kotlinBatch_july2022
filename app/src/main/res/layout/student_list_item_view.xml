@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView android:layout_width="match_parent"
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardElevation="15dp"
@@ -7,31 +8,48 @@
     app:cardCornerRadius="10dp"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <RelativeLayout
+        android:id="@+id/listItemLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp">
+
+        <TextView
+
+            android:id="@+id/profileImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/purple_500"
+            android:text="B"
+
+            android:textColor="@color/white"
+            android:textSize="90sp"
+            tools:ignore="NotSibling" />
         <TextView
             android:id="@+id/Name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ali Rizwan"
+            android:layout_toEndOf="@+id/profileImage"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/profileImage" />
         <TextView
             android:id="@+id/studentPhoneNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="032234567822"
+            android:layout_toEndOf="@id/profileImage"
             android:textSize="20sp"
             android:layout_below="@id/Name"
-            />
+            android:layout_toRightOf="@id/profileImage" />
         <TextView
             android:id="@+id/studentDepartment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
+            android:layout_toEndOf="@id/profileImage"
             android:text="Computer Science"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true" />
+            android:layout_below="@id/studentPhoneNumber"
+            android:layout_toRightOf="@id/profileImage" />
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

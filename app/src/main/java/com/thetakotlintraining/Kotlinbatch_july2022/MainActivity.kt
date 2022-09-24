@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import com.thetakotlintraining.Kotlinbatch_july2022.Models.Student
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         Log.d("MainActivity","onCreate")
         val userName=intent.getStringExtra("userName")
         val usergender=intent.getStringExtra("Gender")
+        val student=intent.extras?.get("studentObject") as Student
         //var userID=intent.getIntExtra()
         //userName="qwerty"
         userNameDisplay.text=usergender
